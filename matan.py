@@ -1,11 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Определение функции
 def f(x):
     return 6*x - x**2
 
-# Создание массива значений x
 x = np.linspace(0, 6, 100)
 y = f(x)
 
@@ -17,12 +15,11 @@ plt.axhline(0, color='black', linewidth=1)  # Ось Ox
 plt.axvline(0, color='black', linewidth=1)  # Ось Oy
 
 # Настройки графика
-plt.xlabel("x")
-plt.ylabel("y")
+plt.xlabel("Ось Ox")
+plt.ylabel("Ось Oy")
 plt.title("График функции и ограниченная область")
 plt.legend()
 plt.grid()
 
-# Отображение графика
 plt.show()
 
